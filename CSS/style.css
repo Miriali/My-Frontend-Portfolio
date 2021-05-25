@@ -24,6 +24,7 @@
     --github: rgb(33,38,45);
     --main-font: 'Nunito Sans', sans-serif;
     --name-font: 'Courgette', cursive;
+    --lightgray-color: lightgray;
     --clave-frontend-font: 'Ubuntu Mono', monospace;
     --clave-olive-font: 'Acme', sans-serif;
     --clave-blue-font: 'Merienda', cursive;
@@ -259,7 +260,7 @@ to {
 .about-text{
     text-align: justify;
     background-color: var(--white);
-    border: 1px solid lightgray;
+    border: 1px solid var(--lightgray-color);
     margin-top: 5rem;
     margin-right: 1.5rem;
     padding: 50px;
@@ -267,7 +268,7 @@ to {
     height: 20%;
     font-size: 1.4rem;
     border-radius: 10px;
-    box-shadow: -10px -10px var(--fucsia-color);
+    box-shadow: -1px -1px var(--fucsia-color);
 }
 
 .about-text .nombre{
@@ -614,7 +615,7 @@ section{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.contact-link:nth-child(1){
+.contact-link:nth-child(3){
     border: 1px solid rgb(201,209,206);
     width: 280px;
     background: #C9D6FF;
@@ -677,7 +678,7 @@ footer p{
 .about-text{
     text-align: justify;
     background-color: var(--white);
-    border: 1px solid lightgray;
+    border: 1px solid var(--lightgray-color);
     margin-top: 5rem;
     margin-right: 1.5rem;
     padding: 50px;
@@ -847,7 +848,7 @@ footer{
 
 @media (max-width: 425px){
 .menu-container{
-    top: 6%;
+    top: 7%;
     right: -20%;
     width: 200px;
 }
@@ -870,27 +871,36 @@ footer{
 
 .about {
     display: flex;
-    border-radius: 20px;
-    margin: 3rem 2rem;
-    background: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 0;
+    margin: 1rem 1.5rem;
+    z-index: -1;
 }
 
 .about-text{
-    margin-top: 10px;
+    text-align: justify;
+    border: 1px solid var(--lightgray-color);
+    margin-top: 1.5rem;
     margin-right: 0;
-    padding: 20px 35px;
+    padding: 35px;
     width: 100%;
-    height: 60vh;
-    font-size: 1.18rem;
+    height: 25%;
+    font-size: 1.28rem;
+    border-radius: 2px;
+    border: none;
+    box-shadow: none;
 }
 
 .about-text .nombre{
-    font-size: 1.3rem;
+    font-size: 1.38rem;
     margin-bottom: 0;
 }
 
 .about-text .frontend{
-    font-size: 1.25rem;
+    font-size: 1.3rem;
 }
 
 .about-text .clave-1{
@@ -902,18 +912,19 @@ footer{
 }
 
 .about-text .clave-3 {
-    font-size: 1.28rem;
+    font-size: 1.25rem;
 }
 
 .about img{
-    margin-top: 2px;
-    margin-left: 14px;
-    margin-right: 14px;
-    border: none;
-    border-radius: 0 0 20px 20px;
-    height: 280px;
-    width: 90%;
-    box-shadow: 10px 10px var(--main-color);
+    background-color: var(--main-color);
+    border-radius: 20%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    height: 220px;
+    width: 240px;
+    border: 1px solid var(--main-color);
 }
 
 .title{
@@ -1002,7 +1013,7 @@ footer{
     width: 100px;
 }
 
-.contact-link:nth-child(1){
+.contact-link:nth-child(3){
     width: 230px;
 }
 
@@ -1044,53 +1055,48 @@ ul li{
 .hero-content .frontend {
     font-size: 2.1rem;
 }
-    
-.about {
-    border-radius: 20px;
-    margin: 3rem 2rem;
-    background: none;
-}
-    
+
 .about-text{
-    margin-top: 10px;
-    margin-right: 0;
-    padding: 25px;
+    padding: 20px;
     width: 100%;
-    height: 62vh;
-    font-size: 1.1rem;
-    z-index: -1;
+    height: 25%;
+    font-size: 1.22rem;
+    line-height: 30px;
+    margin-bottom: .5rem;
 }
-    
+
 .about-text .nombre{
     font-size: 1.3rem;
-    margin-bottom: 0;
 }
-    
+
 .about-text .frontend{
-    font-size: 1.2rem;
+    font-size: 1.22rem;
 }
-    
+
 .about-text .clave-1{
-    font-size: 1.2rem;
+    font-size: 1.22rem;
 }
-    
+
 .about-text .clave-2 {
-    font-size: 1.2rem;
+    font-size: 1.22rem;
 }
-    
+
 .about-text .clave-3 {
-    font-size: 1.2rem;
+    font-size: 1.22rem;
 }
-    
+
 .about img{
-    margin-top: 4px;
-    margin-left: 14px;
-    margin-right: 14px;
-    border-radius: 0 0 20px 20px;
-    height: 250px;
-    box-shadow: 10px 10px var(--main-color);
+    background-color: var(--main-color);
+    border-radius: 20%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    height: 210px;
+    width: 210px;
+    border: 1px solid var(--main-color);
 }
-    
+       
 .title{
     font-size: 2.1rem;
     padding: 40px 0 30px;
@@ -1179,41 +1185,45 @@ footer p{
     font-size: 1.5rem;
 }
 
-.about {
-    border-radius: 0;
-    margin: 3rem 1.5rem;
-    background: none;
-}
-    
 .about-text{
-    margin-top: 5px;
-    margin-right: 0;
-    padding: 20px;
+    padding: 15px;
     width: 100%;
-    height: 55vh;
-    font-size: 1rem;
-    z-index: -1;
+    height: 25%;
+    font-size: 1.2rem;
+    line-height: 28px;
+    margin-bottom: .5rem;
 }
-    
+
 .about-text .nombre{
-    font-size: 1.1rem;
-    margin-bottom: 0;
+    font-size: 1.27rem;
 }
-    
+
 .about-text .frontend{
-    font-size: 1.1rem;
+    font-size: 1.22rem;
 }
-    
+
 .about-text .clave-1{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
-    
+
 .about-text .clave-2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
-    
+
 .about-text .clave-3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+}
+
+.about img{
+    background-color: var(--main-color);
+    border-radius: 20%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    height: 210px;
+    width: 208px;
+    border: 1px solid var(--main-color);
 }
 
 .work-container .work-card{
@@ -1288,7 +1298,7 @@ footer p{
     font-size: 14px;
 }
 
-.contact-link:nth-child(1){
+.contact-link:nth-child(3){
     width: 200px;
 }
 
