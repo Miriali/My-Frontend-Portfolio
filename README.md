@@ -4,7 +4,7 @@ Hi! I hope you´re very well :octocat:
 
 In this repository you can find the code of my personal portfolio as Front-end developer, I love how it look and work I hope this is helpful for you. Keep Coding Friend :smile:
 
-### If you want to take a look you can do it here :point_right:  
+### If you want to take a look you can do it here :point_right:  [![Netlify Status](https://api.netlify.com/api/v1/badges/614f0044-a937-428e-89be-c51cfd734441/deploy-status)](https://mirialilopez.netlify.app/)
 
 ### Requirements
 
